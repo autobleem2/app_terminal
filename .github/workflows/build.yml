@@ -10,6 +10,11 @@ on:
   pull_request:
     branches: [develop, master]
   workflow_dispatch:
+# a container job's steps run under sh unless told otherwise, and sh has no [[ ]] - the tag test in "Version"
+# failed quietly and a v* tag was versioned like a nightly
+defaults:
+  run:
+    shell: bash
 concurrency:
   group: build-${{ github.ref }}
   cancel-in-progress: true
