@@ -35,7 +35,9 @@ multi-platform App format (`docs/app-format-plan.md`). Started 2026-09-24. An Ap
   entry is compiled from `tools/xterm-256color.src` with `pairs#0x7fff` - legacy format (magic `1a 01`).
   Rebuild: `tic -x -o resources/terminfo tools/xterm-256color.src` in the image, and check the magic.
 - **The console**: bash is the firmware's `/bin/bash`; the stick is FAT, so Home and the settings are there.
-  The App runs from the launcher's Apps set (it gives the display up for it). Not yet run on a console.
+  The App runs from the launcher's Apps set (it gives the display up for it).
+- **On hardware** (the owner, 2026-09-24): works as expected on a **Raspberry Pi**. Not yet run on a
+  **console**. The **PC stick** is untested because the PC stick itself is not debugged yet.
 - **Windows** is a dev host only (ConPTY). Seen there: right after a resize, the first character typed may be
   lost - MSYS2's bash under ConPTY; the same sequence on Linux (a real pty) loses nothing.
 - **Testing the UI**: `make_win.sh`, then the launcher's `tools/ab_drive.py` against the DebugDriver
