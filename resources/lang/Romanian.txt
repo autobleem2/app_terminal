@@ -1,0 +1,33 @@
+# AutoBleem Romanian Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Shell-ul nu poate fi pornit:
+Close=Închide
+Close the terminal=Închide terminalul
+End of input - at an empty prompt, ends the shell=Sfârșitul intrării - la un prompt gol închide shell-ul
+Ends the shell and every program started from it=Închide shell-ul și toate programele pornite din el
+Fewer, bigger characters=Mai puține caractere, mai mari
+Full screen=Ecran complet
+Hide keyboard=Ascunde tastatura
+Interrupt the running program=Întrerupe programul în curs
+Larger text=Text mai mare
+Leave full screen=Ieșire din ecran complet
+Lines back:=Linii înapoi:
+Menu=Meniu
+More rows and columns=Mai multe rânduri și coloane
+Page Up/Down=Page Up/Down
+Press any button to close.=Apăsați orice buton pentru a închide.
+Scroll=Derulare
+Send Ctrl+C=Trimite Ctrl+C
+Send Ctrl+D=Trimite Ctrl+D
+Send Ctrl+Z=Trimite Ctrl+Z
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Arată tastatura
+Smaller text=Text mai mic
+Suspend the running program=Suspendă programul în curs
+Terminal=Terminal
+The on-screen keyboard for the pad=Tastatura de pe ecran pentru controler
+The shell has ended.=Shell-ul s-a încheiat.
+The terminal over the whole screen=Terminalul pe tot ecranul
+Type=Scrie

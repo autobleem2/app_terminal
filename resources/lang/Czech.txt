@@ -1,0 +1,33 @@
+# AutoBleem Czech Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Shell nelze spustit:
+Close=Zavřít
+Close the terminal=Zavřít terminál
+End of input - at an empty prompt, ends the shell=Konec vstupu - na prázdném řádku ukončí shell
+Ends the shell and every program started from it=Ukončí shell a všechny programy z něj spuštěné
+Fewer, bigger characters=Méně, ale větších znaků
+Full screen=Celá obrazovka
+Hide keyboard=Skrýt klávesnici
+Interrupt the running program=Přeruší běžící program
+Larger text=Větší text
+Leave full screen=Ukončit celou obrazovku
+Lines back:=Řádků zpět:
+Menu=Nabídka
+More rows and columns=Více řádků a sloupců
+Page Up/Down=Page Up/Down
+Press any button to close.=Stiskněte libovolné tlačítko pro zavření.
+Scroll=Posouvat
+Send Ctrl+C=Odeslat Ctrl+C
+Send Ctrl+D=Odeslat Ctrl+D
+Send Ctrl+Z=Odeslat Ctrl+Z
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Zobrazit klávesnici
+Smaller text=Menší text
+Suspend the running program=Pozastaví běžící program
+Terminal=Terminál
+The on-screen keyboard for the pad=Klávesnice na obrazovce pro ovladač
+The shell has ended.=Shell skončil.
+The terminal over the whole screen=Terminál přes celou obrazovku
+Type=Psát

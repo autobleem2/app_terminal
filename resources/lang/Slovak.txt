@@ -1,0 +1,33 @@
+# AutoBleem Slovak Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Shell nie je možné spustiť:
+Close=Zavrieť
+Close the terminal=Zavrieť terminál
+End of input - at an empty prompt, ends the shell=Koniec vstupu - na prázdnom riadku ukončí shell
+Ends the shell and every program started from it=Ukončí shell a všetky programy z neho spustené
+Fewer, bigger characters=Menej, ale väčších znakov
+Full screen=Celá obrazovka
+Hide keyboard=Skryť klávesnicu
+Interrupt the running program=Preruší bežiaci program
+Larger text=Väčší text
+Leave full screen=Ukončiť celú obrazovku
+Lines back:=Riadkov späť:
+Menu=Ponuka
+More rows and columns=Viac riadkov a stĺpcov
+Page Up/Down=Page Up/Down
+Press any button to close.=Stlačte ľubovoľné tlačidlo na zatvorenie.
+Scroll=Posúvať
+Send Ctrl+C=Odoslať Ctrl+C
+Send Ctrl+D=Odoslať Ctrl+D
+Send Ctrl+Z=Odoslať Ctrl+Z
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Zobraziť klávesnicu
+Smaller text=Menší text
+Suspend the running program=Pozastaví bežiaci program
+Terminal=Terminál
+The on-screen keyboard for the pad=Klávesnica na obrazovke pre ovládač
+The shell has ended.=Shell skončil.
+The terminal over the whole screen=Terminál cez celú obrazovku
+Type=Písať

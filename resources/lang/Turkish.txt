@@ -1,0 +1,33 @@
+# AutoBleem Turkish Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Kabuk başlatılamıyor:
+Close=Kapat
+Close the terminal=Terminali kapat
+End of input - at an empty prompt, ends the shell=Girdi sonu - boş komut satırında kabuğu kapatır
+Ends the shell and every program started from it=Kabuğu ve ondan başlatılan tüm programları sonlandırır
+Fewer, bigger characters=Daha az, daha büyük karakter
+Full screen=Tam ekran
+Hide keyboard=Klavyeyi gizle
+Interrupt the running program=Çalışan programı keser
+Larger text=Daha büyük yazı
+Leave full screen=Tam ekrandan çık
+Lines back:=Geri satır:
+Menu=Menü
+More rows and columns=Daha fazla satır ve sütun
+Page Up/Down=Page Up/Down
+Press any button to close.=Kapatmak için herhangi bir düğmeye basın.
+Scroll=Kaydır
+Send Ctrl+C=Ctrl+C gönder
+Send Ctrl+D=Ctrl+D gönder
+Send Ctrl+Z=Ctrl+Z gönder
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Klavyeyi göster
+Smaller text=Daha küçük yazı
+Suspend the running program=Çalışan programı askıya alır
+Terminal=Terminal
+The on-screen keyboard for the pad=Oyun kolu için ekran klavyesi
+The shell has ended.=Kabuk sonlandı.
+The terminal over the whole screen=Terminal tüm ekranda
+Type=Yaz

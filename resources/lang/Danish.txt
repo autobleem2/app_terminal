@@ -1,0 +1,33 @@
+# AutoBleem Danish Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Kan ikke starte skallen:
+Close=Luk
+Close the terminal=Luk terminalen
+End of input - at an empty prompt, ends the shell=Slut på input - ved en tom prompt afsluttes skallen
+Ends the shell and every program started from it=Afslutter skallen og alle programmer startet fra den
+Fewer, bigger characters=Færre, større tegn
+Full screen=Fuld skærm
+Hide keyboard=Skjul tastatur
+Interrupt the running program=Afbryder det kørende program
+Larger text=Større tekst
+Leave full screen=Forlad fuld skærm
+Lines back:=Linjer tilbage:
+Menu=Menu
+More rows and columns=Flere rækker og kolonner
+Page Up/Down=Page Up/Down
+Press any button to close.=Tryk på en vilkårlig knap for at lukke.
+Scroll=Rul
+Send Ctrl+C=Send Ctrl+C
+Send Ctrl+D=Send Ctrl+D
+Send Ctrl+Z=Send Ctrl+Z
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Vis tastatur
+Smaller text=Mindre tekst
+Suspend the running program=Sætter det kørende program på pause
+Terminal=Terminal
+The on-screen keyboard for the pad=Skærmtastaturet til controlleren
+The shell has ended.=Skallen er afsluttet.
+The terminal over the whole screen=Terminalen over hele skærmen
+Type=Skriv

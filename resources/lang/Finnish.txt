@@ -1,0 +1,33 @@
+# AutoBleem Finnish Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Komentotulkkia ei voi käynnistää:
+Close=Sulje
+Close the terminal=Sulje pääte
+End of input - at an empty prompt, ends the shell=Syötteen loppu - tyhjällä kehotteella lopettaa komentotulkin
+Ends the shell and every program started from it=Lopettaa komentotulkin ja kaikki siitä käynnistetyt ohjelmat
+Fewer, bigger characters=Vähemmän, suurempia merkkejä
+Full screen=Koko näyttö
+Hide keyboard=Piilota näppäimistö
+Interrupt the running program=Keskeyttää käynnissä olevan ohjelman
+Larger text=Suurempi teksti
+Leave full screen=Poistu koko näytöstä
+Lines back:=Rivejä taaksepäin:
+Menu=Valikko
+More rows and columns=Enemmän rivejä ja sarakkeita
+Page Up/Down=Page Up/Down
+Press any button to close.=Sulje painamalla mitä tahansa painiketta.
+Scroll=Vieritä
+Send Ctrl+C=Lähetä Ctrl+C
+Send Ctrl+D=Lähetä Ctrl+D
+Send Ctrl+Z=Lähetä Ctrl+Z
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Näytä näppäimistö
+Smaller text=Pienempi teksti
+Suspend the running program=Pysäyttää käynnissä olevan ohjelman
+Terminal=Pääte
+The on-screen keyboard for the pad=Näyttönäppäimistö ohjaimelle
+The shell has ended.=Komentotulkki on päättynyt.
+The terminal over the whole screen=Pääte koko näytöllä
+Type=Kirjoita

@@ -1,0 +1,33 @@
+# AutoBleem Swedish Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Det gick inte att starta skalet:
+Close=Stäng
+Close the terminal=Stäng terminalen
+End of input - at an empty prompt, ends the shell=Slut på indata - vid en tom prompt avslutas skalet
+Ends the shell and every program started from it=Avslutar skalet och alla program som startats från det
+Fewer, bigger characters=Färre, större tecken
+Full screen=Helskärm
+Hide keyboard=Dölj tangentbord
+Interrupt the running program=Avbryter det program som körs
+Larger text=Större text
+Leave full screen=Lämna helskärm
+Lines back:=Rader bakåt:
+Menu=Meny
+More rows and columns=Fler rader och kolumner
+Page Up/Down=Page Up/Down
+Press any button to close.=Tryck på valfri knapp för att stänga.
+Scroll=Rulla
+Send Ctrl+C=Skicka Ctrl+C
+Send Ctrl+D=Skicka Ctrl+D
+Send Ctrl+Z=Skicka Ctrl+Z
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Visa tangentbord
+Smaller text=Mindre text
+Suspend the running program=Pausar det program som körs
+Terminal=Terminal
+The on-screen keyboard for the pad=Skärmtangentbordet för handkontrollen
+The shell has ended.=Skalet har avslutats.
+The terminal over the whole screen=Terminalen över hela skärmen
+Type=Skriv

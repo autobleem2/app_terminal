@@ -1,0 +1,33 @@
+# AutoBleem Deutsch Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Die Shell kann nicht gestartet werden:
+Close=Schließen
+Close the terminal=Terminal schließen
+End of input - at an empty prompt, ends the shell=Ende der Eingabe - bei leerer Eingabezeile wird die Shell beendet
+Ends the shell and every program started from it=Beendet die Shell und alle daraus gestarteten Programme
+Fewer, bigger characters=Weniger, größere Zeichen
+Full screen=Vollbild
+Hide keyboard=Tastatur ausblenden
+Interrupt the running program=Unterbricht das laufende Programm
+Larger text=Größerer Text
+Leave full screen=Vollbild verlassen
+Lines back:=Zeilen zurück:
+Menu=Menü
+More rows and columns=Mehr Zeilen und Spalten
+Page Up/Down=Bild auf/ab
+Press any button to close.=Zum Schließen eine beliebige Taste drücken.
+Scroll=Blättern
+Send Ctrl+C=Ctrl+C senden
+Send Ctrl+D=Ctrl+D senden
+Send Ctrl+Z=Ctrl+Z senden
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Tastatur einblenden
+Smaller text=Kleinerer Text
+Suspend the running program=Hält das laufende Programm an
+Terminal=Terminal
+The on-screen keyboard for the pad=Die Bildschirmtastatur für das Gamepad
+The shell has ended.=Die Shell wurde beendet.
+The terminal over the whole screen=Das Terminal über den ganzen Bildschirm
+Type=Tippen

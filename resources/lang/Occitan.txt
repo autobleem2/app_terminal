@@ -1,0 +1,33 @@
+# AutoBleem Occitan Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Impossible d'aviar lo shell :
+Close=Tampar
+Close the terminal=Tampar lo terminal
+End of input - at an empty prompt, ends the shell=Fin de la picada - a una invita voida, tampa lo shell
+Ends the shell and every program started from it=Acaba lo shell e totes los programas aviats a partir d'el
+Fewer, bigger characters=Mens de caractèrs, mai grands
+Full screen=Ecran complet
+Hide keyboard=Amagar lo clavièr
+Interrupt the running program=Interromp lo programa en cors
+Larger text=Tèxte mai grand
+Leave full screen=Quitar l'ecran complet
+Lines back:=Linhas en arrièr :
+Menu=Menú
+More rows and columns=Mai de linhas e de colomnas
+Page Up/Down=Page Up/Down
+Press any button to close.=Quichatz un boton per tampar.
+Scroll=Desfilar
+Send Ctrl+C=Mandar Ctrl+C
+Send Ctrl+D=Mandar Ctrl+D
+Send Ctrl+Z=Mandar Ctrl+Z
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Mostrar lo clavièr
+Smaller text=Tèxte mai pichon
+Suspend the running program=Suspend lo programa en cors
+Terminal=Terminal
+The on-screen keyboard for the pad=Lo clavièr a l'ecran per la maneta
+The shell has ended.=Lo shell s'es acabat.
+The terminal over the whole screen=Lo terminal sus tot l'ecran
+Type=Picar

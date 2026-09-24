@@ -1,0 +1,33 @@
+# AutoBleem Polski Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Nie można uruchomić powłoki:
+Close=Zamknij
+Close the terminal=Zamknij terminal
+End of input - at an empty prompt, ends the shell=Koniec danych - przy pustym wierszu poleceń kończy powłokę
+Ends the shell and every program started from it=Kończy powłokę i wszystkie uruchomione z niej programy
+Fewer, bigger characters=Mniej, ale większych znaków
+Full screen=Pełny ekran
+Hide keyboard=Ukryj klawiaturę
+Interrupt the running program=Przerywa działający program
+Larger text=Większy tekst
+Leave full screen=Wyjdź z pełnego ekranu
+Lines back:=Wierszy wstecz:
+Menu=Menu
+More rows and columns=Więcej wierszy i kolumn
+Page Up/Down=Strona w górę/w dół
+Press any button to close.=Naciśnij dowolny przycisk, aby zamknąć.
+Scroll=Przewijanie
+Send Ctrl+C=Wyślij Ctrl+C
+Send Ctrl+D=Wyślij Ctrl+D
+Send Ctrl+Z=Wyślij Ctrl+Z
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Pokaż klawiaturę
+Smaller text=Mniejszy tekst
+Suspend the running program=Wstrzymuje działający program
+Terminal=Terminal
+The on-screen keyboard for the pad=Klawiatura ekranowa do obsługi padem
+The shell has ended.=Powłoka zakończyła działanie.
+The terminal over the whole screen=Terminal na całym ekranie
+Type=Pisz

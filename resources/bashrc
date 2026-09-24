@@ -1,0 +1,21 @@
+# The Terminal App's bash start-up file (bash --rcfile): the system's own, a coloured prompt, colours for ls
+# and grep, then your ~/.bashrc - the place for anything of your own (it lives in Home/ on the stick, where an
+# update of the App never touches it).
+
+[ -f /etc/bash.bashrc ] && . /etc/bash.bashrc
+[ -f /etc/bashrc ] && . /etc/bashrc
+
+PS1='\[\e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\$ '
+
+# only where the tool understands the option (a busybox build may not)
+if ls --color=auto / >/dev/null 2>&1; then
+    alias ls='ls --color=auto'
+fi
+grep --color=auto -q x /dev/null 2>/dev/null
+if [ $? -ne 2 ]; then
+    alias grep='grep --color=auto'
+fi
+alias ll='ls -l'
+alias la='ls -la'
+
+[ -f "$HOME/.bashrc" ] && . "$HOME/.bashrc"

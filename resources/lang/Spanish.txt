@@ -1,0 +1,33 @@
+# AutoBleem Spanish Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=No se puede iniciar el shell:
+Close=Cerrar
+Close the terminal=Cerrar el terminal
+End of input - at an empty prompt, ends the shell=Fin de la entrada - con la línea de órdenes vacía, cierra el shell
+Ends the shell and every program started from it=Termina el shell y todos los programas iniciados desde él
+Fewer, bigger characters=Menos caracteres, más grandes
+Full screen=Pantalla completa
+Hide keyboard=Ocultar teclado
+Interrupt the running program=Interrumpe el programa en ejecución
+Larger text=Texto más grande
+Leave full screen=Salir de pantalla completa
+Lines back:=Líneas atrás:
+Menu=Menú
+More rows and columns=Más filas y columnas
+Page Up/Down=Re Pág/Av Pág
+Press any button to close.=Pulsa cualquier botón para cerrar.
+Scroll=Desplazar
+Send Ctrl+C=Enviar Ctrl+C
+Send Ctrl+D=Enviar Ctrl+D
+Send Ctrl+Z=Enviar Ctrl+Z
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Mostrar teclado
+Smaller text=Texto más pequeño
+Suspend the running program=Suspende el programa en ejecución
+Terminal=Terminal
+The on-screen keyboard for the pad=El teclado en pantalla para el mando
+The shell has ended.=El shell ha terminado.
+The terminal over the whole screen=El terminal en toda la pantalla
+Type=Escribir

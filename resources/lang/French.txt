@@ -1,0 +1,33 @@
+# AutoBleem French Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Impossible de lancer le shell :
+Close=Fermer
+Close the terminal=Fermer le terminal
+End of input - at an empty prompt, ends the shell=Fin de saisie - à une invite vide, ferme le shell
+Ends the shell and every program started from it=Termine le shell et tous les programmes lancés depuis celui-ci
+Fewer, bigger characters=Moins de caractères, plus grands
+Full screen=Plein écran
+Hide keyboard=Masquer le clavier
+Interrupt the running program=Interrompt le programme en cours
+Larger text=Texte plus grand
+Leave full screen=Quitter le plein écran
+Lines back:=Lignes en arrière :
+Menu=Menu
+More rows and columns=Plus de lignes et de colonnes
+Page Up/Down=Page préc./suiv.
+Press any button to close.=Appuyez sur un bouton pour fermer.
+Scroll=Défiler
+Send Ctrl+C=Envoyer Ctrl+C
+Send Ctrl+D=Envoyer Ctrl+D
+Send Ctrl+Z=Envoyer Ctrl+Z
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Afficher le clavier
+Smaller text=Texte plus petit
+Suspend the running program=Suspend le programme en cours
+Terminal=Terminal
+The on-screen keyboard for the pad=Le clavier à l'écran pour la manette
+The shell has ended.=Le shell s'est terminé.
+The terminal over the whole screen=Le terminal sur tout l'écran
+Type=Taper

@@ -1,0 +1,33 @@
+# AutoBleem Dutch Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=Kan de shell niet starten:
+Close=Sluiten
+Close the terminal=Terminal sluiten
+End of input - at an empty prompt, ends the shell=Einde invoer - bij een lege prompt sluit het de shell
+Ends the shell and every program started from it=Beëindigt de shell en alle programma's die ervandaan zijn gestart
+Fewer, bigger characters=Minder, grotere tekens
+Full screen=Volledig scherm
+Hide keyboard=Toetsenbord verbergen
+Interrupt the running program=Onderbreekt het lopende programma
+Larger text=Grotere tekst
+Leave full screen=Volledig scherm verlaten
+Lines back:=Regels terug:
+Menu=Menu
+More rows and columns=Meer rijen en kolommen
+Page Up/Down=Page Up/Down
+Press any button to close.=Druk op een knop om te sluiten.
+Scroll=Scrollen
+Send Ctrl+C=Ctrl+C versturen
+Send Ctrl+D=Ctrl+D versturen
+Send Ctrl+Z=Ctrl+Z versturen
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=Toetsenbord tonen
+Smaller text=Kleinere tekst
+Suspend the running program=Pauzeert het lopende programma
+Terminal=Terminal
+The on-screen keyboard for the pad=Het schermtoetsenbord voor de controller
+The shell has ended.=De shell is beëindigd.
+The terminal over the whole screen=De terminal over het hele scherm
+Type=Typen

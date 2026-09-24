@@ -1,0 +1,33 @@
+# AutoBleem Chinese_Simplified Translation - terminal
+# Format: English Text=Translated Text (a text missing here falls through to the main GUI's file)
+# Untranslated: 0 / Total: 29
+
+Cannot start the shell:=无法启动 Shell：
+Close=关闭
+Close the terminal=关闭终端
+End of input - at an empty prompt, ends the shell=输入结束 - 在空提示符下会退出 Shell
+Ends the shell and every program started from it=结束 Shell 及其启动的所有程序
+Fewer, bigger characters=字符更少、更大
+Full screen=全屏
+Hide keyboard=隐藏键盘
+Interrupt the running program=中断正在运行的程序
+Larger text=放大文字
+Leave full screen=退出全屏
+Lines back:=已回滚行数：
+Menu=菜单
+More rows and columns=更多行和列
+Page Up/Down=上一页/下一页
+Press any button to close.=按任意按钮关闭。
+Scroll=滚动
+Send Ctrl+C=发送 Ctrl+C
+Send Ctrl+D=发送 Ctrl+D
+Send Ctrl+Z=发送 Ctrl+Z
+Shift/Ctrl=Shift/Ctrl
+Show keyboard=显示键盘
+Smaller text=缩小文字
+Suspend the running program=暂停正在运行的程序
+Terminal=终端
+The on-screen keyboard for the pad=手柄使用的屏幕键盘
+The shell has ended.=Shell 已结束。
+The terminal over the whole screen=终端占满整个屏幕
+Type=输入
