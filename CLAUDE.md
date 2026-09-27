@@ -21,9 +21,9 @@ multi-platform App format (`docs/app-format-plan.md`). Started 2026-09-24. An Ap
 | `src/gui/terminal_settings.*` | `<XDG_CONFIG_HOME or HOME/.config>/autobleem-terminal/terminal.ini`: fontsize (12-36), fullscreen, keyboard, scrollback. |
 | `src/terminal_app.*`, `src/main.cpp` | `TerminalApp : AppBase("Terminal")` - the main GUI's config/theme/language, the App's `lang/` over it, the theme's music stopped. `main`: the App dir from `AB_APP_DIR`, else the folder above `bin/<key>/`; the root from the argument, `AB_ROOT`, `/media` (psc) or `<app>/../..`. `--shell <program>` / `AB_TERMINAL_SHELL` pick the shell. Log: `System/Logs/terminal.log`. |
 | `resources/` | What the package ships next to `bin/<key>/`: `app.ini` (`Exec=bin/{key}/terminal`, `Startup=run.sh`, `VirtualPad=false`), `run.sh` (app_env.sh, then `/tmp/lib` - the launcher's SDL2 2.0.14 - on the console's library path: app_env.sh names only the Apps' libs pack), `bashrc`, `fonts/DejaVuSansMono{,-Bold}.ttf` + licence (Bitstream Vera licence, from Debian's fonts-dejavu-core 2.37), `terminfo/x/xterm-256color`, `lang/`, `icon.png`, `readme.txt`. |
-| `tools/` | `make_lang.py` (the 29 strings x 16 languages - edit the table, rerun), `make_icon.py` (draws icon.png, Pillow), `check_psc_binary.sh` (from the console tools), `xterm-256color.src` (the terminfo source). |
+| `tools/` | `make_lang.py` (the 29 strings x 16 languages - edit the table, rerun), `make_icon.py` (draws icon.png, Pillow), `xterm-256color.src` (the terminfo source). `check_psc_binary.sh` is no longer vendored (APPS-6) - `ci/build.sh` reads it from the autobleem-build image at `/opt/ab/tools/`. |
 | `ci/build.sh` | `native|psc|rpi|rpi64|pcusb|all` in the autobleem-build image -> `dist/terminal-<key>-<version>.zip`. |
-| `toolchains/` | Copies of the launcher's psc/rpi/rpi64/pcusb toolchain files (the Pi's SysGCC mode needs the launcher's `sdl2-devkit`, not copied: build Pi targets in the image). |
+| `toolchains/` | Copies of the launcher's rpi/rpi64/pcusb toolchain files (the Pi's SysGCC mode needs the launcher's `sdl2-devkit`, not copied: build Pi targets in the image). The psc toolchain file is no longer vendored (APPS-6) - `ci/build.sh` reads `PSCtoolchainV8.cmake` from the image at `/opt/ab/toolchains/psc/`. |
 
 ## Things to know
 

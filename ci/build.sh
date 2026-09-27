@@ -65,11 +65,11 @@ build_native() {
 build_psc() {
     banner "psc: the console (build_psc)"
     rm -rf build_psc/Apps
-    configure build_psc -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=toolchains/psc/PSCtoolchainV8.cmake \
+    configure build_psc -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=/opt/ab/toolchains/psc/PSCtoolchainV8.cmake \
         -DAB_PSC_TOOLCHAIN="${AB_PSC_TOOLCHAIN:-/opt/psc}"
     ninja -C build_psc -j "$JOBS"
     # the console's glibc 2.24 / GLIBCXX 3.4.22, no RPATH
-    bash tools/check_psc_binary.sh build_psc/Apps/terminal/bin/psc/terminal "${AB_PSC_TOOLCHAIN:-/opt/psc}"
+    bash /opt/ab/tools/check_psc_binary.sh build_psc/Apps/terminal/bin/psc/terminal "${AB_PSC_TOOLCHAIN:-/opt/psc}"
     package build_psc psc
 }
 
