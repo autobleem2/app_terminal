@@ -91,7 +91,7 @@ TEST_CASE("the program sees a terminal of our size, and the new one after a resi
 TEST_CASE("typed input reaches the program, Ctrl+C interrupts it") {
     PtyProcess pty;
     VtScreen vt(40, 6);
-    REQUIRE(pty.start({"/bin/sh", "-c", "read x; echo \"got:$x\"; sleep 30"}, Env, "", 40, 6));
+    REQUIRE(pty.start({"/bin/sh", "-c", "read x; echo \"got:$x\"; exec sleep 30"}, Env, "", 40, 6));
     pty.write("hi\r");
     CHECK(waitFor(pty, vt, "got:hi"));
     pty.write("\x03");
