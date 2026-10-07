@@ -195,10 +195,9 @@ string GuiTerminal::hints() const {
 }
 
 //*******************************
-// GuiTerminal::render
+// GuiTerminal::draw
 //*******************************
-void GuiTerminal::render() {
-    renderer.clear();
+void GuiTerminal::draw() {
     if (settings_.fullscreen) {
         renderer.setDrawColor(ableem::Color(0, 0, 0, 255));
         renderer.fillRect();
@@ -219,7 +218,6 @@ void GuiTerminal::render() {
         keyboard_.render(*gui, renderer, keyboardArea_, keyFont_);
     if (!settings_.fullscreen)
         gui->renderStatus(hints());
-    renderer.present();
 }
 
 //*******************************
