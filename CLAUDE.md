@@ -46,3 +46,5 @@ multi-platform App format (`docs/app-format-plan.md`). Started 2026-09-24. An Ap
   `ctrl+c`, `text` types; `;` splits a driver script, so put multi-command shell lines in a file under Home.
 - Every string on screen is `_()` and in all 16 languages (`tools/make_lang.py`); strings the main GUI has
   (Delete, Space, Enter, Keyboard) are left to it.
+
+- **Category** (the owner, 2026-10-07): every `app.ini` carries `Category=tools` (the launcher's Apps tab files an App by it: games, emulators, tools, media, other - any case); this repo has no Store item generator, so the item's `category` is set where the item is made.
