@@ -22,7 +22,7 @@ public:
     GuiTerminal(ableem::GuiBase &gui, TerminalSettings &settings, term::ShellLaunch launch, std::string fontDir);
 
     void init() override;
-    void render() override;
+    void draw() override; // the stack clears before it and presents after (Screen::render is final)
     void loop() override;
 
 private:
