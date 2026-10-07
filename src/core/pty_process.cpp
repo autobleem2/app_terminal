@@ -5,14 +5,17 @@
 
 #include <algorithm>
 #include <chrono>
+#include <cstdlib>
 #include <cstring>
 #include <thread>
+#include <vector>
 
 #ifdef _WIN32
 #include <windows.h>
 #else
 #include <cerrno>
 #include <csignal>
+#include <dirent.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
 #include <sys/wait.h>
@@ -89,6 +92,27 @@ static void sleepMs(int ms) {
     this_thread::sleep_for(chrono::milliseconds(ms));
 }
 
+// the descriptors >= 3 that are open now, listed before fork() (the child may not allocate). A container can
+// set RLIMIT_NOFILE to a billion, and closing every number up to it takes minutes - so only the open ones are
+// closed; without /proc the old walk up to the limit, capped
+static vector<int> openDescriptors() {
+    vector<int> fds;
+    if (DIR *dir = opendir("/proc/self/fd")) {
+        const int self = dirfd(dir);
+        while (const dirent *entry = readdir(dir)) {
+            const int fd = atoi(entry->d_name);
+            if (fd >= 3 && fd != self && entry->d_name[0] != '.')
+                fds.push_back(fd);
+        }
+        closedir(dir);
+        return fds;
+    }
+    const long limit = sysconf(_SC_OPEN_MAX);
+    for (long fd = 3; fd < (limit > 0 && limit < 4096 ? limit : 4096); fd++)
+        fds.push_back(static_cast<int>(fd));
+    return fds;
+}
+
 PtyProcess::PtyProcess() : impl_(new Impl) {}
 
 PtyProcess::~PtyProcess() {
@@ -131,7 +155,7 @@ bool PtyProcess::start(const vector<string> &argv, const vector<string> &env, co
     for (const string &e : env)
         envp.push_back(const_cast<char *>(e.c_str()));
     envp.push_back(nullptr);
-    const long maxFd = sysconf(_SC_OPEN_MAX) > 0 ? sysconf(_SC_OPEN_MAX) : 1024;
+    const vector<int> openFds = openDescriptors();
 
     const pid_t pid = fork();
     if (pid < 0) {
@@ -150,8 +174,10 @@ bool PtyProcess::start(const vector<string> &argv, const vector<string> &env, co
         dup2(slave, 1);
         dup2(slave, 2);
         // nothing of ours goes along: the window's and the pads' devices, the log, the master
-        for (long fd = 3; fd < maxFd; fd++)
-            close(static_cast<int>(fd));
+        if (slave > 2)
+            close(slave);
+        for (const int fd : openFds)
+            close(fd);
         // the signals as a fresh program expects them (SDL and the launcher may have changed some)
         sigset_t none;
         sigemptyset(&none);
