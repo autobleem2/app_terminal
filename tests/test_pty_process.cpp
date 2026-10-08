@@ -7,6 +7,7 @@
 #include <doctest/doctest.h>
 
 #include <chrono>
+#include <fstream>
 #include <thread>
 
 using namespace std;
@@ -44,6 +45,18 @@ bool waitFor(PtyProcess &pty, VtScreen &vt, const string &text, int seconds = 10
             vt.write(buffer, static_cast<size_t>(n));
         else
             this_thread::sleep_for(chrono::milliseconds(5));
+    }
+    return false;
+}
+
+// waits for process `pid` to be running the program `name` (Linux: /proc/<pid>/comm)
+bool waitForComm(const string &pid, const string &name, int seconds = 10) {
+    const auto end = chrono::steady_clock::now() + chrono::seconds(seconds);
+    while (chrono::steady_clock::now() < end) {
+        string comm;
+        if (ifstream("/proc/" + pid + "/comm") >> comm && comm == name)
+            return true;
+        this_thread::sleep_for(chrono::milliseconds(5));
     }
     return false;
 }
@@ -91,9 +104,16 @@ TEST_CASE("the program sees a terminal of our size, and the new one after a resi
 TEST_CASE("typed input reaches the program, Ctrl+C interrupts it") {
     PtyProcess pty;
     VtScreen vt(40, 6);
-    REQUIRE(pty.start({"/bin/sh", "-c", "read x; echo \"got:$x\"; exec sleep 30"}, Env, "", 40, 6));
+    // the shell names its pid, then becomes sleep: Ctrl+C is sent once that pid really is a sleep
+    REQUIRE(pty.start({"/bin/sh", "-c", "read x; echo \"got:$x\"; echo \"pid=$$;\"; exec sleep 30"}, Env, "", 40, 6));
     pty.write("hi\r");
     CHECK(waitFor(pty, vt, "got:hi"));
+    REQUIRE(waitFor(pty, vt, ";"));
+    const string text = vt.text();
+    const size_t at = text.find("pid=");
+    REQUIRE(at != string::npos);
+    const string pid = text.substr(at + 4, text.find(';', at) - at - 4);
+    CHECK(waitForComm(pid, "sleep"));
     pty.write("\x03");
     CHECK(drain(pty, vt));
     CHECK_FALSE(pty.running());
